@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #161616;
+}
+
+#logo {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+#flex {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ######    Search    ###### */
+
+#searchbar, #submit-button {
+    background: rgba(0, 0, 0, 0.25); 
+    color: white;
+    border: none;
+    font-size: 1.25em;
+    display: inline-block;
+    padding: 10px 15px;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+#searchbar {
+    width: 80%;
+    margin-right: -4px;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ######    Links    ###### */
+
+a {
+    font-family: 'Open+Sans', sans-serif;
+    text-decoration: none; 
+    color: white;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 1.5em;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.link {
+    padding: 10px 25px;
+    border-bottom: solid rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: solid rgba(255, 255, 255);
+}
+
+.chan:hover {
+    border-bottom: solid #789922;
+}
+
+.reddit:hover {
+    border-bottom: solid #0077D6;
+}
+
+.youtube:hover {
+    border-bottom: solid #ff0000;
+}
+
+.nyaa:hover {
+    border-bottom: solid #9400D3;
+}
