@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div id = "flex">
+            <div id = "content">
+                <img src = "logo.png" id = "logo">
+
+                <div id = "search-container">
+                    <form method = "get" action = "http://www.google.com/search">
+                        <input type = "text" name = "q"  maxlength = "255" autocomplete = "off" placeholder = "Search" id = "searchbar" autofocus>
+                        <button type = "submit" id = "submit-button">
+                            <i class = "fa fa-search fa-lg" id = "searchicon"></i>
+                        </button> 
+                    </form>      
+                </div>
+
+                <ul>
+                    <li><a href = "https://www.4chan.org" target = "_self" class = "link chan">4chan</a></li>
+                    <li><a href = "https://www.reddit.com" target = "_self" class = "link reddit">Reddit</a></li>
+                    <li><a href = "https://www.youtube.com" target = "_self" class = "link youtube">YouTube</a></li>
+                    <li><a href = "https://nyaa.si/" target = "_self" class = "link nyaa">Nyaa</a></li>
+                </ul>  
+            </div>
+        </div>
+    </body>
+</html>
