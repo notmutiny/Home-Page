@@ -2,24 +2,29 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" href="styles/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href = "styles/main.css">
+        <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet"> 
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src = "scripts/main.js"></script>
     </head>
 
     <body>
         <div id = "flex">
             <div id = "content">
-                <img src = "logo.png" id = "logo">
-
-                <div id = "search-container">
-                    <form method = "get" action = "http://www.google.com/search">
-                        <input type = "text" name = "q"  maxlength = "255" autocomplete = "off" placeholder = "Search" id = "searchbar" autofocus>
-                        <button type = "submit" id = "submit-button">
-                            <i class = "fa fa-search fa-lg" id = "searchicon"></i>
-                        </button> 
-                    </form>      
+                
+                <div id = "logo-wrapper">
+                    <img src = "logo/background.png" ondragstar = "return false;" id = "logo"> <!-- logo-eyes overlaps logo for better image file compression -->
+                    <a href = "https://github.com/notmutiny/Home-Page">
+                        <img src = "logo/eyes/default.png" onmouseover = "randomLogo(this)" onmouseout = "restoreLogo(this)" ondragstart = "return false;" id = "logo-eyes">
+                    </a>
                 </div>
+
+                <form method = "get" action = "http://www.google.com/search">
+                    <input type = "text" name = "q"  maxlength = "255" autocomplete = "off" placeholder = "Search" id = "searchbar" autofocus>
+                    <button type = "submit" id = "submit-button">
+                        <i class = "fa fa-search fa-lg"></i>
+                    </button> 
+                </form>      
 
                 <ul>
                     <li><a href = "https://www.4chan.org" target = "_self" class = "link chan">4chan</a></li>

@@ -1,53 +1,72 @@
 html, body {
+    background: #161616;
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
-    background: #161616;
-}
-
-#logo {
-    height: 200px;
-    width: 200px;
-    margin: 20px auto;
 }
 
 #flex {
+    align-items: center;
     display: flex;
     height: 100%;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
-/* ######    Search    ###### */
+/* logo */
+/* ---------------------------------- */
+
+#logo-wrapper, #logo, #logo-eyes {
+/* consistent logo/wrapper size */
+    height: 200px;
+    margin: 20px;
+}
+
+#logo, #logo-eyes {
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#logo-wrapper {
+    position: relative;
+}
+
+#logo {
+    z-index: 0;
+}
+
+#logo-eyes {
+    z-index: 1;
+}
+
+/* search */
+/* ---------------------------------- */
 
 #searchbar, #submit-button {
     background: rgba(0, 0, 0, 0.25); 
-    color: white;
     border: none;
-    font-size: 1.25em;
+    color: white;
     display: inline-block;
-    padding: 10px 15px;
     font-family: 'Open+Sans', sans-serif;
+    font-size: 1.25em;
+    padding: 10px 15px;
 }
 
 #searchbar {
-    width: 80%;
     margin-right: -4px;
+    width: 80%;
 }
 
 #submit-button:hover {
-    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-/* ######    Links    ###### */
-
-a {
-    font-family: 'Open+Sans', sans-serif;
-    text-decoration: none; 
-    color: white;
-}
+/* links */
+/* ---------------------------------- */
 
 ul {
     padding: 0;
@@ -55,15 +74,18 @@ ul {
 }
 
 ul li {
-    margin: 1.5em;
-    list-style-type: none;
     display: inline-block;
+    list-style-type: none;
+    margin: 1.5em;
 }
 
-.link {
-    padding: 10px 25px;
-    border-bottom: solid rgba(255, 255, 255, 0.75);
+.link {    
     background-color: rgba(0, 0, 0, 0.250);
+    border-bottom: solid rgba(255, 255, 255, 0.75);
+    color: white;
+    font-family: 'Open+Sans', sans-serif;
+    padding: 10px 25px;
+    text-decoration: none;
 }
 
 .link:hover {
@@ -77,6 +99,7 @@ ul li {
 
 .reddit:hover {
     border-bottom: solid #0077D6;
+    /* alternative orange #FF5700 */
 }
 
 .youtube:hover {
