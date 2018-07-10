@@ -13,9 +13,9 @@
             <div id = "content">
                 
                 <div id = "logo-wrapper">
-                    <img src = "logo/background.png" ondragstar = "return false;" id = "logo"> <!-- logo-eyes overlaps logo for better image file compression -->
-                    <a href = "https://github.com/notmutiny/Home-Page">
-                        <img src = "logo/eyes/default.png" onmouseover = "randomLogo(this)" onmouseout = "restoreLogo(this)" ondragstart = "return false;" id = "logo-eyes">
+                    <img src = "logo/background.png" draggable = "false" id = "logo">
+                    <a href = "https://github.com/notmutiny/Home-Page"> <!-- logo-eyes <img> overlaps logo <img> for better image file compression -->
+                        <img src = "logo/eyes/default.png" onmouseover = "randomLogo(this)" onmouseout = "restoreLogo(this)" draggable = "false" id = "logo-eyes">
                     </a>
                 </div>
 

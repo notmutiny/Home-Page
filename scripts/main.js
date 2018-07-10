@@ -6,9 +6,16 @@ function getRandomInt(min, max) {
 
 // -- logo funcs -- //
 
-function randomLogo(element) {
-    var eyes = ["angry", "closed", "confused", "happy", "tired", "worried"];
-    element.src = "logo/eyes/" + eyes[getRandomInt(0, eyes.length)] + ".png";
+var logoCache = "";
+
+function randomLogo(element) { // change superintendents expression onmouseover
+    var logoFaces = ["angry", "closed", "confused", "happy", "tired", "worried"];
+
+    if (logoCache) // stop logo from showing a face twice
+        logoFaces.splice(logoFaces.indexOf(logoCache), 1);
+
+    logoCache = logoFaces[getRandomInt(0, logoFaces.length)];
+    element.src = "logo/eyes/" + logoCache + ".png";
 }
 
 function restoreLogo(element) {
