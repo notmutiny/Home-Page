@@ -1,0 +1,16 @@
+.link, #searchbar, #submit-button, #footer-bottom, #footer-bottom > button {
+    background: #E0E0E0;
+    border: none;
+    color: #595959;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+.link:hover, #submit-button:hover, #footer-bottom > button:hover {
+    background: #B7B7B7;
+    color: #424242;
+    cursor: pointer;
+}
+
+.link {
+    border-bottom: solid #595959;
+}

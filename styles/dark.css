@@ -1,0 +1,25 @@
+body {
+    background: #161616;    
+}
+
+.link, #searchbar, #submit-button, #footer-bottom, #footer-bottom > button {
+    background: rgba(0, 0, 0, 0.25);
+    border: none;
+    color: white;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+.link:hover, #submit-button:hover, #footer-bottom > button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.link {
+    border-bottom: solid rgba(255, 255, 255, 0.75);
+}
+
+::placeholder { 
+    color: white;
+    opacity: 0.5;
+}

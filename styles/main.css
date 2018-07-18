@@ -1,5 +1,7 @@
+/* Header */
+/* ---------------------------------- */
+
 html, body {
-    background: #161616;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -13,11 +15,15 @@ html, body {
     text-align: center;
 }
 
-/* logo */
+/* Logo */
 /* ---------------------------------- */
 
-#logo-wrapper, #logo, #logo-eyes {
+#logo-wrapper {
+    position: relative;
+}
+
 /* consistent logo/wrapper size */
+#logo-wrapper, #logo, #logo-eyes {
     height: 200px;
     margin: 20px;
 }
@@ -30,27 +36,11 @@ html, body {
     position: absolute;
 }
 
-#logo-wrapper {
-    position: relative;
-}
-
-#logo {
-    z-index: 0;
-}
-
-#logo-eyes {
-    z-index: 1;
-}
-
-/* search */
+/* Search */
 /* ---------------------------------- */
 
 #searchbar, #submit-button {
-    background: rgba(0, 0, 0, 0.25); 
-    border: none;
-    color: white;
     display: inline-block;
-    font-family: 'Open+Sans', sans-serif;
     font-size: 1.25em;
     padding: 10px 15px;
 }
@@ -60,17 +50,11 @@ html, body {
     width: 80%;
 }
 
-#submit-button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-
-/* links */
+/* Links */
 /* ---------------------------------- */
 
 ul {
     padding: 0;
-    text-align: center;
 }
 
 ul li {
@@ -79,33 +63,46 @@ ul li {
     margin: 1.5em;
 }
 
-.link {    
-    background-color: rgba(0, 0, 0, 0.250);
-    border-bottom: solid rgba(255, 255, 255, 0.75);
-    color: white;
-    font-family: 'Open+Sans', sans-serif;
+.link {
     padding: 10px 25px;
     text-decoration: none;
 }
 
-.link:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: solid rgba(255, 255, 255);
+.chan:hover { border-bottom: solid #789922; }
+.reddit:hover { border-bottom: solid #0077D6; }
+.youtube:hover { border-bottom: solid #ff0000; }
+.nyaa:hover { border-bottom: solid #9400D3; }
+
+/* Footer styles */
+/* ---------------------------------- */
+
+#footer-wrapper {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
 }
 
-.chan:hover {
-    border-bottom: solid #789922;
+#footer-bottom {
+    text-align: end;
+    width: 100%;
 }
 
-.reddit:hover {
-    border-bottom: solid #0077D6;
-    /* alternative orange #FF5700 */
+#footer-bottom > button {
+    background: none;
+    cursor: pointer;
+    height: 45px;
+    padding: 0 20px;
 }
 
-.youtube:hover {
-    border-bottom: solid #ff0000;
+.accordian {
+    display: block;
 }
 
-.nyaa:hover {
-    border-bottom: solid #9400D3;
+#warframe {
+    display: none;
+}
+
+#weather {
+    display: none;
 }
