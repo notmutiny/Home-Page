@@ -15,6 +15,7 @@ html, body {
     text-align: center;
 }
 
+
 /* Logo */
 /* ---------------------------------- */
 
@@ -36,6 +37,10 @@ html, body {
     position: absolute;
 }
 
+#logo { z-index: 0; }
+#logo-eyes { z-index: 1; }
+
+
 /* Search */
 /* ---------------------------------- */
 
@@ -49,6 +54,7 @@ html, body {
     margin-right: -4px;
     width: 80%;
 }
+
 
 /* Links */
 /* ---------------------------------- */
@@ -73,7 +79,8 @@ ul li {
 .youtube:hover { border-bottom: solid #ff0000; }
 .nyaa:hover { border-bottom: solid #9400D3; }
 
-/* Footer styles */
+
+/* Footer */
 /* ---------------------------------- */
 
 #footer-wrapper {
@@ -93,16 +100,4 @@ ul li {
     cursor: pointer;
     height: 45px;
     padding: 0 20px;
-}
-
-.accordian {
-    display: block;
-}
-
-#warframe {
-    display: none;
-}
-
-#weather {
-    display: none;
 }

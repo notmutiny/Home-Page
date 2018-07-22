@@ -1,3 +1,7 @@
+body {
+    background: #FFFFFF;    
+}
+
 .link, #searchbar, #submit-button, #footer-bottom, #footer-bottom > button {
     background: #E0E0E0;
     border: none;
