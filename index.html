@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel = "stylesheet" href = "styles/dark.css" id = "theme">
-        <link rel = "stylesheet" href = "styles/main.css">
-        <link rel = "stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet"> 
+        <link rel="stylesheet" href="styles/dark.css" id="theme">
+        <link rel="stylesheet" href="styles/main.css"> <!-- change #theme on page load for persistent dark / light -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src = "scripts/main.js"></script>
+        <script src="scripts/main.js"></script>
     </head>
 
     <body>
@@ -15,24 +15,24 @@
             <div id="content">
                 
                 <div id="logo-wrapper">
-                    <img src="logo/background.png" style="z-index: 0;" draggable="false" id="logo">
+                    <img id="logo" src="logo/background.png" draggable="false">
                     <a href="https://github.com/notmutiny/Home-Page"> <!-- logo-eyes <img> overlaps logo <img> for better image file compression -->
-                        <img src="logo/eyes/default.png" style="z-index: 1;" onmouseover="randomLogo(this)" onmouseout="restoreLogo(this)" draggable="false" id="logo-eyes">
+                        <img id="logo-eyes" src="logo/eyes/default.png" onmouseover="randomLogo(this)" onmouseout="restoreLogo(this)" draggable="false">
                     </a>
                 </div>
 
                 <form method="get" action="http://www.google.com/search">
-                    <input type="text" name="q" maxlength="255" autocomplete="off" placeholder="Search" id="searchbar" autofocus>
-                    <button type="submit" id="submit-button">
+                    <input id="searchbar" type="text" name="q" maxlength="255" autocomplete="off" placeholder="Search" autofocus>
+                    <button id="submit-button" type="submit">
                         <i class="fa fa-search"></i>
                     </button> 
                 </form>
 
                 <ul>
-                    <li><a href="https://www.4chan.org" target="_self" class="link chan">4chan</a></li>
-                    <li><a href="https://www.reddit.com" target="_self" class = "link reddit">Reddit</a></li>
-                    <li><a href="https://www.youtube.com" target="_self" class = "link youtube">YouTube</a></li>
-                    <li><a href="https://nyaa.si/" target="_self" class="link nyaa">Nyaa</a></li>
+                    <li><a class="link chan" href="https://www.4chan.org" target="_self">4chan</a></li>
+                    <li><a class="link reddit" href="https://www.reddit.com" target="_self">Reddit</a></li>
+                    <li><a class="link youtube" href="https://www.youtube.com" target="_self">YouTube</a></li>
+                    <li><a class="link nyaa" href="https://nyaa.si/" target="_self">Nyaa</a></li>
                 </ul>  
 
             </div>
@@ -41,8 +41,9 @@
         <div id="footer-wrapper">
             <div id="footer-bottom">
                 <button onclick="toggleTheme()">
-                    <i class="fas fa-moon" id="theme-icon"></i> </button>
+                    <i class="fas fa-moon" id="theme-icon"></i></button>
             </div>
         </div>
+
     </body>
 </html>
